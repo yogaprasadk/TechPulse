@@ -7,5 +7,6 @@ As I'm diving into the **MERN stack**, I built this **Tech News App** using the 
 🔹 **Pagination feature** to navigate through pages of news seamlessly, ensuring a smooth user experience.
 
 This project was a great learning experience, and I'm eager to continue improving and expanding it. Check it out and let me know your thoughts! 
+Visit My App - https://techpulse-devleo.vercel.app/
 
 #TechPulse #ReactJS #WebDevelopment #JavaScript #TechNews #APIs #Programming #MERN

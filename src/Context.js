@@ -5,7 +5,7 @@ let API="https://hn.algolia.com/api/v1/search?";
 
 const initialState =  {
     isLoading:true,
-    query:"HTML",
+    query:" ",
     nbPages:0,
     page:0,
     hits:[],

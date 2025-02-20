@@ -55,5 +55,5 @@ This project is licensed under the **MIT License**.
 
 ---
 
-**Developed by [Akash](https://github.com/devleo10)**
+**Developed by [Mehbub](https://github.com/devleo10)**
 

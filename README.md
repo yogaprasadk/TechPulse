@@ -38,12 +38,8 @@
 
 Check out the deployed version: [TechPulse on Vercel](https://techpulse-devleo.vercel.app/)
 
-## Future Improvements
-
-- 📌 Implement user authentication for personalized content.
-- 📌 Add bookmarking functionality for saving articles.
-- 📌 Enhance UI with animations and dark mode.
-- 📌 Integrate more sources for diversified news coverage.
+🔹 🔥 Trending News Section – Highlight the most popular articles.
+🔹 🌙 Dark Mode & Theming – Implement a customizable dark mode.
 
 ## Contributing
 

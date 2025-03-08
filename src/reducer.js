@@ -12,6 +12,12 @@ const reducer = (state, action) => {
                 hits: action.payload.hits,
                 nbPages: action.payload.nbPages,
             };
+        case "GET_POPULAR_NEWS":
+            return {
+                ...state,
+                popularNews: action.payload,
+                isLoading: false,
+            };
         case "SEARCH_QUERY":
             return {
                 ...state,

@@ -15,7 +15,11 @@ const Pagination = () => {
     }
     <div className='popular-btn'>
       <button onClick={()=>setShowPopularNews(!showPopularNews)} style={{ margin : '2rem'}}>
-          Trending Tech News
+      {
+        !showPopularNews
+          ? 'Trending Tech News'
+          : 'Back to Home'
+      }
       </button>
     </div>
     </>

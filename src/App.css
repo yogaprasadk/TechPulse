@@ -7,11 +7,42 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  /* Light Mode Variables */
+  --primary-bg: radial-gradient(circle, #93A5CF, #E4EfE9);
+  --primary-font-color: rgba(21, 19, 60, 0.8);
+  --primary-cardbg-color: #f6f5f5;
+  --primary-text-color: #15133c;
+  --primary-button-bg: #15133c;
+  --primary-button-text: #ffffff;
+  --primary-link-color: #92b4ec;
+  --primary-delete-color: red;
+  --input-bg: #f6f6f9;
+  --input-text: black;
+  --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.darkmode {
+  --primary-bg: radial-gradient(circle, #2c3e50, #000000);
+  --primary-font-color: rgba(255, 255, 255, 0.8);
+  --primary-cardbg-color: #1e1e1e;
+  --primary-text-color: #ffffff;
+  --primary-button-bg: #92b4ec;
+  --primary-button-text: #15133c;
+  --primary-link-color: #4a90e2;
+  --primary-delete-color: #ff4d4d;
+  --input-bg: #2a2a2a;
+  --input-text: white;
+  --box-shadow: rgba(255, 255, 255, 0.1) 0px 7px 29px 0px;
+}
+
 html {
   font-size: 62.5%;
 }
+
 body {
-  background: radial-gradient(circle, #93A5CF, #E4EfE9);
+  background: var(--primary-bg);
+  color: var(--primary-font-color);
 }
 
 
@@ -28,7 +59,7 @@ h2 {
 
 p {
   margin: 2rem 0;
-  color: rgba(21, 19, 60, 0.5);
+  color: var(--primary-font-color);
   font-weight: 400;
   font-size: 1.6rem;
   display: inline-block;
@@ -52,11 +83,11 @@ span {
   min-width: 20rem;
   width: 40vw;
   padding: 4rem;
-  background-color: #f6f5f5;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 0.5rem;
   color: #15133c;
+  background-color: var(--primary-cardbg-color);
+  box-shadow: var(--box-shadow);
   border-radius: 10px;
+  color: var(--primary-text-color);
 }
 
 .card-button {
@@ -67,19 +98,19 @@ span {
 }
 
 .card-button a {
-  color: #92b4ec;
+  color:var(--primary-link-color);
   font-weight: 400;
   font-size: 1.6rem;
 }
 
 .card-button a:last-child {
-  color: red;
+  color: var(--primary-delete-color);
 }
 
 form {
   display: grid;
   place-items: center;
-  
+
 }
 
 
@@ -89,10 +120,10 @@ input {
   font-size: 5rem;
   text-transform: capitalize;
   border: none;
-  outline:none;
-  border-radius:20px;
-  background-color: #f6f6f9;
-  color:black;
+  outline: none;
+  border-radius: 20px;
+  background-color: var(--input-bg);
+  color: var(--input-text);
   font-family: inherit;
   font-size: 150%;
   margin-right: auto;
@@ -100,24 +131,25 @@ input {
 
 
 
-.pagination-btn, .popular-btn {
+.pagination-btn,
+.popular-btn {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 button {
   padding: 0.8rem 2.2rem;
   border: none;
   font-size: 1.6rem;
-  background-color: #15133c;
-  color: #ffffff;
+  background-color: var(--primary-button-bg);
+  color: var(--primary-button-text);
   margin: 3rem;
   cursor: pointer;
   display: inline-block;
-  border-radius:1rem;
+  border-radius: 1rem;
 }
 
 @media (max-width: 998px) {
@@ -218,4 +250,87 @@ button {
   padding: 1rem;
   border-radius: 10px;
   font-size: 1.2rem;
+}
+
+.heading {
+  font-family: 'Bitter';
+  font-size: '36px';
+  font-weight: 900;
+  color: var(--primary-font-color)
+}
+
+.subText{
+  font-family: 'Bitter';
+  font-size: 42px;
+  font-weight: 900;
+  color: var(--primary-font-color)
+}
+
+.theme-switch {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--primary-button-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.theme-switch:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.theme-switch svg {
+  fill: var(--primary-button-text);
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Light Mode - Show Sun, Hide Moon */
+.theme-switch svg:last-child{
+  display: none;
+}
+
+.darkmode .theme-switch svg:first-child{
+  display: none;
+}
+
+.darkmode .theme-switch svg:last-child{
+  display: block;
+}
+@media (max-width: 768px) {
+  .theme-switch {
+    height: 40px;
+    width: 40px;
+    top: 15px; /* Adjusted for tablets */
+    right: 15px;
+  }
+
+  .theme-switch svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-switch {
+    height: 35px;
+    width: 35px;
+    top: 8px; /* Adjusted for mobile */
+    right: 0px;
+  }
+
+  .theme-switch svg {
+    width: 18px;
+    height: 18px;
+  }
 }

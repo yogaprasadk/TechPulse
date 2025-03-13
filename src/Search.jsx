@@ -3,20 +3,15 @@ import{useGlobalContext} from './Context'
 
 
 const Search = () => {
-   const {query,searchFn}=useGlobalContext();
+   const {query,searchFn,showPopularNews}=useGlobalContext();
   return (
     <>
-    <h1 style={{ 
-  fontFamily: 'Roboto, sans-serif', 
-  fontSize: '36px', 
-  fontWeight: 'bold', 
-  color: 'black' 
-}}>
-  <span style={{ fontSize: '42px' }}>T</span>ech
-  <span style={{ fontSize: '42px' }}>P</span>ulse
+    <h1 className="heading">
+  <span className='subText'>T</span>ech
+  <span className='subText'>P</span>ulse
 </h1>
     
-
+  {!showPopularNews &&
     <form>
       <div>
         <input type="text" placeholder="search here"
@@ -25,6 +20,7 @@ const Search = () => {
         />
       </div>
     </form>
+  }
     </>
     
    

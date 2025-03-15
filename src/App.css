@@ -335,6 +335,7 @@ button {
   }
 }
 
+/* Footer Styling */
 .footer {
   background-color: #333;
   color: #fff;
@@ -356,6 +357,9 @@ button {
 .footer-section h3 {
   font-size: 18px;
   margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #f39c12;
 }
 
 .footer-section ul {
@@ -378,13 +382,17 @@ button {
   color: #f39c12;
 }
 
+.footer-heading-follow{
+  margin-left:20px;
+}
+
 .social-links {
   margin-top: 10px;
 }
 
 .social-icon {
   color: #fff;
-  margin-right: 15px;
+  margin-left:20px;
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s;
@@ -392,4 +400,20 @@ button {
 
 .social-icon:hover {
   color: #f39c12;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: white;
+}
+
+.footer-para{
+  color: white;
 }

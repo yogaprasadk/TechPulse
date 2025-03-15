@@ -2,12 +2,9 @@ import React, { useEffect, useState } from 'react'
 import Search from './Search';
 import Stories from './Stories';
 import Pagination from './Pagination';
-
 import './App.css';
 import { useGlobalContext } from './Context';
 import PopularNews from './PopularNews';
-
-
 
 export const App = () => {
   const [theme, setTheme] = useState('light');

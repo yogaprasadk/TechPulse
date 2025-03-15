@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Poppins:wght@200;400;600&family=Roboto+Slab&family=Sedan:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Poppins:wght@200;400;600&family=Roboto+Slab&family=Sedan:ital@0;1&display=swap");
 
 * {
   margin: 0;
@@ -41,11 +41,24 @@ html {
 }
 
 body {
+<<<<<<< HEAD
   background: var(--primary-bg);
   color: var(--primary-font-color);
+=======
+<<<<<<< Updated upstream
+  background: radial-gradient(circle, #93a5cf, #e4efe9);
+>>>>>>> footer
 }
 
+=======
 
+  background: var(--primary-bg);
+  color: var(--primary-font-color);
+
+  background: radial-gradient(circle, #93a5cf, #e4efe9);
+}
+
+>>>>>>> Stashed changes
 h1 {
   font-size: 3.2rem;
   margin: 2rem 0;
@@ -69,7 +82,6 @@ span {
   text-transform: capitalize;
   font-weight: bold;
 }
-
 
 .stories-div {
   display: flex;
@@ -110,9 +122,7 @@ span {
 form {
   display: grid;
   place-items: center;
-
 }
-
 
 input {
   padding: 1.5rem;
@@ -122,22 +132,39 @@ input {
   border: none;
   outline: none;
   border-radius: 20px;
+<<<<<<< HEAD
   background-color: var(--input-bg);
   color: var(--input-text);
+=======
+  background-color: #f6f6f9;
+  color: black;
+>>>>>>> footer
   font-family: inherit;
   font-size: 150%;
   margin-right: auto;
 }
 
+<<<<<<< HEAD
 
 
 .pagination-btn,
 .popular-btn {
+=======
+<<<<<<< Updated upstream
+.pagination-btn {
+=======
+.pagination-btn,
+.popular-btn {
+>>>>>>> Stashed changes
+>>>>>>> footer
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
 
+=======
+>>>>>>> footer
 }
 
 button {
@@ -199,6 +226,7 @@ button {
   font-style: normal;
 }
 
+<<<<<<< HEAD
 .popular-news-section {
   display: flex;
   flex-direction: column;
@@ -320,6 +348,76 @@ button {
     height: 22px;
   }
 }
+=======
+/*footer */
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.footer-logo h2 {
+  margin: 0;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00bcd4;
+}
+
+.footer-social a {
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #00bcd4;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-social {
+    margin-top: 10px;
+  }
+}
+<<<<<<< Updated upstream
+=======
+>>>>>>> footer
 
 @media (max-width: 480px) {
   .theme-switch {
@@ -333,4 +431,9 @@ button {
     width: 18px;
     height: 18px;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> Stashed changes
+>>>>>>> footer

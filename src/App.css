@@ -11,9 +11,19 @@ html {
   font-size: 62.5%;
 }
 body {
+<<<<<<< Updated upstream
   background: radial-gradient(circle, #93a5cf, #e4efe9);
 }
 
+=======
+
+  background: var(--primary-bg);
+  color: var(--primary-font-color);
+
+  background: radial-gradient(circle, #93a5cf, #e4efe9);
+}
+
+>>>>>>> Stashed changes
 h1 {
   font-size: 3.2rem;
   margin: 2rem 0;
@@ -94,7 +104,12 @@ input {
   margin-right: auto;
 }
 
+<<<<<<< Updated upstream
 .pagination-btn {
+=======
+.pagination-btn,
+.popular-btn {
+>>>>>>> Stashed changes
   width: 100%;
   display: flex;
   justify-content: center;
@@ -226,3 +241,20 @@ button {
     margin-top: 10px;
   }
 }
+<<<<<<< Updated upstream
+=======
+
+@media (max-width: 480px) {
+  .theme-switch {
+    height: 35px;
+    width: 35px;
+    top: 8px; /* Adjusted for mobile */
+    right: 0px;
+  }
+
+  .theme-switch svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+>>>>>>> Stashed changes

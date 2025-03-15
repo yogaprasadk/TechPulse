@@ -335,6 +335,7 @@ button {
   }
 }
 
+
 /* Footer Styling */
 .footer {
   background-color: #333;
@@ -382,7 +383,6 @@ button {
   color: #f39c12;
 }
 
-
 .social-links {
   margin-top: 10px;
 }
@@ -412,5 +412,5 @@ button {
 }
 
 .footer-para{
-  color: white;
+  color: whi;
 }

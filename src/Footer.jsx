@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Footer.js
 import React from 'react';
 import './App.css';
@@ -36,36 +35,6 @@ const Footer = () => {
             </div>
         </footer>
     );
-=======
-// src/Footer.jsx
-
-import React from 'react';
-import './App.css'; 
-
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-logo">
-          <h2>MyLogo</h2>
-        </div>
-        <div className="footer-links">
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div className="footer-social">
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-          <a href="#">Instagram</a>
-        </div>
-      </div>
-    </footer>
-  );
->>>>>>> 7423d0865c93987b35b5e2663122aa066da0d366
 }
 
 export default Footer;

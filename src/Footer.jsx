@@ -68,19 +68,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="footer-section">
-                    <h3 className="footer-heading">Subscribe</h3>
-                    <p className="footer-para">Get the latest tech news delivered straight to your inbox.</p>
-                    <form className="newsletter-form">
-                        <input
-                            type="email"
-                            placeholder="Enter your email"
-                            className="newsletter-input"
-                        />
-                        <button type="submit" className="newsletter-button">Subscribe</button>
-                    </form>
-                </div>
-                <div className="footer-section">
-                    <h3 className="footer-heading footer-heading-follow">Follow Us</h3>
+                    <h3 className="footer-heading">Follow Us</h3>
                     <div className="social-links">
                         <a href="#" className="social-icon facebook">Facebook</a>
                         <a href="#" className="social-icon twitter">Twitter</a>

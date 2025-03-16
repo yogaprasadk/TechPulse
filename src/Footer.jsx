@@ -1,45 +1,4 @@
-// import React from 'react';
-// import './App.css';
 
-// const Footer = () => {
-//     return (
-//         <footer className="footer">
-//             <div className="footer-container">
-//                 <div className="footer-section">
-//                     <h3 className="footer-heading">Company</h3>
-//                     <ul className="footer-list">
-//                         <li><a href="#">About Us</a></li>
-//                         <li><a href="#">Careers</a></li>
-//                         <li><a href="#">Contact</a></li>
-//                         <li><a href="#">Privacy Policy</a></li>
-//                     </ul>
-//                 </div>
-//                 <div className="footer-section">
-//                     <h3 className="footer-heading">Quick Links</h3>
-//                     <ul className="footer-list">
-//                         <li><a href="#">FAQ</a></li>
-//                         <li><a href="#">Support</a></li>
-//                         <li><a href="#">Blog</a></li>
-//                         <li><a href="#">Terms & Conditions</a></li>
-//                     </ul>
-//                 </div>
-//                 <div className="footer-section">
-//                     <h3 className="footer-heading">Follow Us</h3>
-//                     <div className="social-links">
-//                         <a href="#" className="social-icon facebook">Facebook</a>
-//                         <a href="#" className="social-icon twitter">Twitter</a>
-//                         <a href="#" className="social-icon instagram">Instagram</a>
-//                     </div>
-//                 </div>
-//             </div>
-//             <div className="footer-bottom">
-//                 <p>© 2025 TechPulse All rights reserved.</p>
-//             </div>
-//         </footer>
-//     );
-// }
-
-// export default Footer;
 
 
 import React from 'react';

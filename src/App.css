@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Poppins:wght@200;400;600&family=Roboto+Slab&family=Sedan:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Poppins:wght@200;400;600&family=Roboto+Slab&family=Sedan:ital@0;1&display=swap");
 
 * {
   margin: 0;
@@ -9,7 +9,7 @@
 
 :root {
   /* Light Mode Variables */
-  --primary-bg: radial-gradient(circle, #93A5CF, #E4EfE9);
+  --primary-bg: radial-gradient(circle, #93a5cf, #e4efe9);
   --primary-font-color: rgba(21, 19, 60, 0.8);
   --primary-cardbg-color: #f6f5f5;
   --primary-text-color: #15133c;
@@ -45,7 +45,6 @@ body {
   color: var(--primary-font-color);
 }
 
-
 h1 {
   font-size: 3.2rem;
   margin: 2rem 0;
@@ -69,7 +68,6 @@ span {
   text-transform: capitalize;
   font-weight: bold;
 }
-
 
 .stories-div {
   display: flex;
@@ -98,7 +96,7 @@ span {
 }
 
 .card-button a {
-  color:var(--primary-link-color);
+  color: var(--primary-link-color);
   font-weight: 400;
   font-size: 1.6rem;
 }
@@ -110,9 +108,7 @@ span {
 form {
   display: grid;
   place-items: center;
-
 }
-
 
 input {
   padding: 1.5rem;
@@ -129,15 +125,12 @@ input {
   margin-right: auto;
 }
 
-
-
 .pagination-btn,
 .popular-btn {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 button {
@@ -253,17 +246,17 @@ button {
 }
 
 .heading {
-  font-family: 'Bitter';
-  font-size: '36px';
+  font-family: "Bitter";
+  font-size: "36px";
   font-weight: 900;
-  color: var(--primary-font-color)
+  color: var(--primary-font-color);
 }
 
-.subText{
-  font-family: 'Bitter';
+.subText {
+  font-family: "Bitter";
   font-size: 42px;
   font-weight: 900;
-  color: var(--primary-font-color)
+  color: var(--primary-font-color);
 }
 
 .theme-switch {
@@ -296,15 +289,15 @@ button {
 }
 
 /* Light Mode - Show Sun, Hide Moon */
-.theme-switch svg:last-child{
+.theme-switch svg:last-child {
   display: none;
 }
 
-.darkmode .theme-switch svg:first-child{
+.darkmode .theme-switch svg:first-child {
   display: none;
 }
 
-.darkmode .theme-switch svg:last-child{
+.darkmode .theme-switch svg:last-child {
   display: block;
 }
 @media (max-width: 768px) {
@@ -413,4 +406,141 @@ button {
 
 .footer-para{
   color: whi;
+} */
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  width: 30%;
+  min-width: 250px; /* Prevents sections from becoming too narrow */
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  color: #f39c12;
+}
+
+.social-links {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Makes sure icons adjust on smaller screens */
+}
+
+.social-icon {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #f39c12;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 90%;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px 0;
+  }
+
+  .footer-section h3 {
+    font-size: 16px;
+  }
+
+  .footer-section ul li a {
+    font-size: 12px;
+  }
+
+  .social-icon {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .footer {
+    font-size: 18px;
+    padding: 30px 0;
+  }
+
+  .footer-section h3 {
+    font-size: 22px;
+  }
+
+  .social-icon {
+    font-size: 20px;
+  }
 }
